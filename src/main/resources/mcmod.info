@@ -1,0 +1,18 @@
+[
+{
+  "modid": "forgottenapothecary",
+  "name": "Forgottenapothecary",
+  "description": "An addon for Bewitchment.",
+  "version":"${version}",
+  "mcversion": "${mcversion}",
+  "url": "???",
+  "updateUrl": "",
+  "authorList": ["Sunconure11"],
+  "credits": "To all contributors of the mod.",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["forge"],
+  "dependencies": ["forge"],
+  "useDependencyInformation": true
+}
+]
