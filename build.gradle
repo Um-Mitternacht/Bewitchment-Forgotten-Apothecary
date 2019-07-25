@@ -49,8 +49,8 @@ dependencies {
     deobfProvided "betteranimalsplus:betteranimalsplus:1.12.2:6.0.3"
     deobfProvided curse.resolve("rustic", "2670073")
     compile "baubles:Baubles:1.12:1.5.2"
-	compile "vazkii.patchouli:Patchouli:1.0-20.99"
-    compile curse.resolve("bewitchment", "2747963")	
+    compile "vazkii.patchouli:Patchouli:1.0-20.99"
+    compile curse.resolve("bewitchment", "2748302")	
 }
 
 processResources {
