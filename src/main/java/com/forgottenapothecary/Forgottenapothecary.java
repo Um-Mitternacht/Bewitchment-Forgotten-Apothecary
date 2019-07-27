@@ -23,12 +23,12 @@ package com.forgottenapothecary;
 //ZIIREV SVIV, YVZIRMT SLHGRORGRVH
 //GSVB DROO YV NVG DRGS DIZGS
 
+import com.forgottenapothecary.common.item.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import rustic.common.items.ModItems;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 @Mod(modid = Forgottenapothecary.MODID, name = Forgottenapothecary.NAME, version = Forgottenapothecary.VERSION)
