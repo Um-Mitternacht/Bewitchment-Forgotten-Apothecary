@@ -23,8 +23,10 @@ package com.forgottenapothecary;
 //ZIIREV SVIV, YVZIRMT SLHGRORGRVH
 //GSVB DROO YV NVG DRGS DIZGS
 
-import com.forgottenapothecary.common.item.ModItems;
+import com.bewitchment.proxy.ServerProxy;
+import com.forgottenapothecary.common.object.ModObjects;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
@@ -35,9 +37,9 @@ import org.apache.logging.log4j.Logger;
 public class Forgottenapothecary {
 	
 	public static final String MODID = "forgottenapothecary", NAME = "Forgottenapothecary", VERSION = "0.0.1";
-	
 	public static final Logger logger = LogManager.getLogger(NAME);
-	
+	@SidedProxy(serverSide = "com.forgottenapothecary.proxy.ServerProxy", clientSide = "com.forgottenapothecary.proxy.ClientProxy")
+	public static ServerProxy proxy;
 	@Mod.Instance
 	public static Forgottenapothecary instance;
 	
@@ -45,7 +47,7 @@ public class Forgottenapothecary {
 	public void preInit(FMLPreInitializationEvent event) {
 		logger.info("I am inevitable.");
 		logger.info("*snap*");
-		ModItems.preInit();
+		ModObjects.preInit();
 	}
 	
 	@Mod.EventHandler

@@ -19,7 +19,7 @@ public class Util {
 		ResourceLocation loc = new ResourceLocation(Forgottenapothecary.MODID, name);
 		item.setRegistryName(loc);
 		item.setTranslationKey(loc.toString().replace(":", "."));
-		//item.setCreativeTab(Forgottenapothecary.tab);
+		//object.setCreativeTab(Forgottenapothecary.tab);
 		ModRegistries.MODEL_PREDICATES.put(item, predicates);
 		ModRegistries.ORE_DICTIONARY_ENTRIES.put(item, oreDictionaryNames);
 		return item;

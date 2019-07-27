@@ -1,4 +1,4 @@
-package com.forgottenapothecary.common.item;
+package com.forgottenapothecary.common.object;
 
 import com.bewitchment.Util;
 import net.minecraft.item.Item;
@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
  */
 
 @SuppressWarnings({"unused", "WeakerAccess", "ConstantConditions", "SameParameterValue"})
-public class ModItems {
+public class ModObjects {
 	
 	public static final Item moonstone = Util.registerItem("moonstone", "gemMoonstone");
 	
