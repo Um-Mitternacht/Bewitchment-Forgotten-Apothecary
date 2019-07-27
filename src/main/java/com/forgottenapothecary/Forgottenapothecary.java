@@ -45,12 +45,12 @@ public class Forgottenapothecary {
 	public void preInit(FMLPreInitializationEvent event) {
 		logger.info("I am inevitable.");
 		logger.info("*snap*");
+		ModItems.preInit();
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		logger.info("And I am Iron Man.");
 		logger.info("*snap*");
-		ModItems.init();
 	}
 }
