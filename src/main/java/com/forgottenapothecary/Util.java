@@ -1,12 +1,9 @@
 package com.forgottenapothecary;
 
-import com.bewitchment.Bewitchment;
 import com.bewitchment.registry.ModRegistries;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import netscape.security.ForbiddenTargetException;
 
 import java.util.Arrays;
 import java.util.List;
