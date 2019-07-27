@@ -1,6 +1,6 @@
 package com.forgottenapothecary.common.object;
 
-import com.bewitchment.Util;
+import com.forgottenapothecary.Util;
 import net.minecraft.item.Item;
 
 /**
