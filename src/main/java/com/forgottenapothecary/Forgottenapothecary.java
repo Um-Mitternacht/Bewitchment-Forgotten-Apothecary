@@ -28,6 +28,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import rustic.common.items.ModItems;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 @Mod(modid = Forgottenapothecary.MODID, name = Forgottenapothecary.NAME, version = Forgottenapothecary.VERSION)
@@ -50,5 +51,6 @@ public class Forgottenapothecary {
 	public void init(FMLInitializationEvent event) {
 		logger.info("And I am Iron Man.");
 		logger.info("*snap*");
+		ModItems.init();
 	}
 }
