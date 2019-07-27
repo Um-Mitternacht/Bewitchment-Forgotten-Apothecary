@@ -23,8 +23,8 @@ package com.forgottenapothecary;
 //ZIIREV SVIV, YVZIRMT SLHGRORGRVH
 //GSVB DROO YV NVG DRGS DIZGS
 
-import com.bewitchment.proxy.ServerProxy;
 import com.forgottenapothecary.common.object.ModObjects;
+import com.forgottenapothecary.proxy.ServerProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
