@@ -1,6 +1,6 @@
 {
   "parent": "block/cross",
   "textures": {
-	"cross": "bewitchment:crop_silphium_false"
+	"cross": "forgottenapothecary:crop_silphium_false"
   }
 }
