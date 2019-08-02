@@ -2,11 +2,13 @@ package com.forgottenapothecary.registry;
 
 import com.forgottenapothecary.Forgottenapothecary;
 import com.forgottenapothecary.common.object.ModObjects;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.lang.reflect.Field;
@@ -27,6 +29,32 @@ public class ModRegistries {
 	
 	public ModRegistries() {
 	}
+	
+	@SubscribeEvent
+	public static void registerEntities(RegistryEvent.Register<EntityEntry> event) {
+		try {
+			for (Field f : ModEntities.class.getFields()) {
+				Object obj = f.get(null);
+				if (obj instanceof EntityEntry) event.getRegistry().register((EntityEntry) obj);
+			}
+		}
+		catch (Exception ignored) {}
+	}
+	
+	@SubscribeEvent
+	public static void registerBlocks(RegistryEvent.Register<Block> event) {
+		try {
+			for (Field f : ModObjects.class.getFields()) {
+				Object obj = f.get(null);
+				if (obj instanceof Block) {
+					event.getRegistry().register((Block) obj);
+				}
+				else if (obj instanceof Block[]) for (Block block : (Block[]) obj) event.getRegistry().register(block);
+			}
+		}
+		catch (Exception ignored) {}
+	}
+	
 	
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
@@ -51,7 +79,6 @@ public class ModRegistries {
 			}
 		}
 		catch (Exception var8) {
-			;
 		}
 		
 		Iterator var9 = ORE_DICTIONARY_ENTRIES.keySet().iterator();
