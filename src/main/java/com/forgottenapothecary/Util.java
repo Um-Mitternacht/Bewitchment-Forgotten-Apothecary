@@ -1,6 +1,6 @@
 package com.forgottenapothecary;
 
-import com.bewitchment.registry.ModRegistries;
+import com.forgottenapothecary.registry.ModRegistries;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
