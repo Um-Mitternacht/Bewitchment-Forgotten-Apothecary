@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-	"layer0": "forgottenapothecary:items/alexandrite"
+	"layer0": "forgotten_apothecary:items/alexandrite"
   }
 }

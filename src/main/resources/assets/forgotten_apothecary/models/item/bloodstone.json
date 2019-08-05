@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-	"layer0": "forgotten_apothecary:items/malachite"
+	"layer0": "forgotten_apothecary:items/bloodstone"
   }
 }

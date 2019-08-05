@@ -36,7 +36,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(modid = Forgottenapothecary.MODID, name = Forgottenapothecary.NAME, version = Forgottenapothecary.VERSION)
 public class Forgottenapothecary {
 	
-	public static final String MODID = "forgottenapothecary", NAME = "Forgotten Apothecary", VERSION = "0.0.1";
+	public static final String MODID = "forgotten_apothecary", NAME = "Forgotten Apothecary", VERSION = "0.0.1";
 	public static final Logger logger = LogManager.getLogger(NAME);
 	@SidedProxy(serverSide = "com.forgottenapothecary.proxy.ServerProxy", clientSide = "com.forgottenapothecary.proxy.ClientProxy")
 	public static ServerProxy proxy;
