@@ -50,7 +50,7 @@ dependencies {
     deobfProvided curse.resolve("rustic", "2746408")
     compile "baubles:Baubles:1.12:1.5.2"
     compile "vazkii.patchouli:Patchouli:1.0-20.99"
-    compile curse.resolve("bewitchment", "2750425")	
+    compile curse.resolve("bewitchment", "2762152")	
 }
 
 processResources {
