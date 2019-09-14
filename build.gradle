@@ -22,7 +22,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12.2-14.23.5.2768"
+    version = "1.12.2-14.23.5.2838"
     runDir = "run"
     mappings = "stable_39"
     clientRunArgs += "--username=Bewitchment"
@@ -40,17 +40,20 @@ repositories {
 }
 
 dependencies {
-    deobfProvided "mezz.jei:jei_1.12.2:4.15.0.268"
+    deobfProvided "mezz.jei:jei_1.12.2:4.15.0.289"
     deobfProvided "team.chisel.ctm:CTM:MC1.12.2-0.3.3.22"
     deobfProvided "team.chisel:Chisel:MC1.12.2-0.2.1.35"
     deobfProvided "thaumcraft:Thaumcraft:1.12.2:6.1.BETA26"
     deobfProvided "dynamictrees:DynamicTrees:1.12.2:0.9.5"
-    deobfProvided "vazkii.botania:Botania:r1.10-361.69"
-    deobfProvided "betteranimalsplus:betteranimalsplus:1.12.2:7.0.1"
+    deobfProvided "vazkii.botania:Botania:r1.10-363.119"
+    deobfProvided "betteranimalsplus:betteranimalsplus:1.12.2:7.1.1"
     deobfProvided curse.resolve("rustic", "2746408")
+    deobfProvided curse.resolve("quark", "2759240")
+    deobfProvided curse.resolve("autoreglib", "2746011")
+    deobfProvided curse.resolve("mowzies-mobs", "2699705")
+    deobfCompile "net.ilexiconn:llibrary:1.7.9-1.12.2"	
     compile "baubles:Baubles:1.12:1.5.2"
     compile "vazkii.patchouli:Patchouli:1.0-20.99"
-    compile curse.resolve("bewitchment", "2768450")	
 }
 
 processResources {
